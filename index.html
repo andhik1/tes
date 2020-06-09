@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<label for="cars">Filter:</label>
+  <select id="cars" name="cars">
+    <option value="volvo" selected>FTIK</option>
+    <option value="saab">FTK</option>
+    <option value="fiat">ELEKTRO</option>
+    <option value="audi">INFORMATIKA</option>
+  </select>
+  
+ <br>
+ <br>
+<table>
+  <tr>
+    <th>No</th>
+ 
+    <th>Data Dasar</th>
+	<th>Capaian</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    
+    <td>Jumlah Lulusan</td>
+    <td><input type="text" id="username" name="username" value="80"><br></td>
+  </tr>
+  <tr>
+    <td>2</td>
+ 
+    <td>Jumlah Mahasiswa</td>
+    <td><input type="text" id="username" name="username" value="40"><br></td>
+  </tr>
+  <tr>
+    <td>3</td>
+
+    <td>Jumlah Dosen</td>
+    <td><input type="text" id="username" name="username" value="60"><br></td>
+  </tr>
+</table>
+<br>
+<input type="submit" value="Submit">
 
 </body>
 </html>
